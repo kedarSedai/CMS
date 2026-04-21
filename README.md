@@ -1,23 +1,25 @@
 # Rising MVPs
 
-Monorepo with **npm workspaces**. Dependencies are installed from the **repository root** (one `package-lock.json`).
-
-- **`frontend/`** — Next.js app (workspace package name `ryan`).
-- **`backend/`** — Placeholder for Strapi or another API (see `backend/README.md`).
+- **`frontend/`** — Next.js app (`package.json` name `ryan`).
+- **`backend/`** — Placeholder for a future API (see `backend/README.md`).
 
 ## Local dev
 
-From repo root (recommended):
-
 ```bash
-npm install
-npm run dev
+cd frontend && npm install && npm run dev
 ```
 
-Or from `frontend/`: `npm install` still works if you only have that folder, but the canonical flow is root + workspaces.
+Or from repo root: `npm install --prefix frontend` then `npm run dev --prefix frontend`.
 
-## Vercel
+## Vercel (`github.com/.../CMS`)
 
-Connect the Git repo with **root directory left as the project root** (the folder that contains this `README.md`). Vercel will run `npm install` then `npm run build` at the root; workspaces install `next` and the build runs `next build` inside `frontend/`.
+This repo includes **`vercel.json`** so every deploy runs:
 
-**Do not** set Vercel “Root Directory” to `frontend` unless you remove the workspace setup—otherwise use root as above.
+1. `npm install --prefix ./frontend` — installs `next` and the rest into `frontend/node_modules`
+2. `npm run build --prefix ./frontend` — runs `next build` in `frontend/`
+
+Leave the Vercel **Root Directory** as the **repository root** (the folder that contains `vercel.json`).
+
+In the Vercel project **Settings → Build & Development Settings**, clear any custom **Install Command** / **Build Command** overrides so the dashboard does not ignore `vercel.json`. Use the defaults from the repo unless you know you need an override.
+
+Commit and push: `vercel.json`, `package.json`, `frontend/package-lock.json`, and the `frontend/` app.

@@ -1,14 +1,11 @@
 {
   "name": "rising-mvps",
   "private": true,
-  "description": "Monorepo: Next.js app is the `frontend` workspace. Run `npm install` from repo root (installs all workspaces).",
-  "workspaces": [
-    "frontend"
-  ],
+  "description": "Monorepo: Next.js lives in frontend/. On Vercel, vercel.json installs and builds there.",
   "scripts": {
-    "dev": "npm run dev -w ryan",
-    "build": "npm run build -w ryan",
-    "start": "npm run start -w ryan",
-    "lint": "npm run lint -w ryan"
+    "dev": "npm run dev --prefix frontend",
+    "build": "npm run build --prefix frontend",
+    "start": "npm run start --prefix frontend",
+    "lint": "npm run lint --prefix frontend"
   }
 }
