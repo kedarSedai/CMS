@@ -11,18 +11,22 @@ cd frontend && npm install && npm run dev
 
 Or from repo root: `npm install --prefix frontend` then `npm run dev --prefix frontend`.
 
-## Vercel (`github.com/.../CMS`)
+## Vercel
 
-This repo includes **`vercel.json`** so every deploy:
+Vercel must use the folder that contains **`next`** in `package.json` — that is **`frontend/`**, not the monorepo root.
 
-1. Uses the **Next.js** preset (`"framework": "nextjs"`) — Vercel must not treat the app as a static site that expects output in `public/`.
-2. Runs `npm install --prefix ./frontend` then `cd frontend && npm run build`.
+### Required settings
 
-Leave the Vercel **Root Directory** as the **repository root** (the folder that contains `vercel.json`).
+1. **Project → Settings → General → Root Directory**  
+   Set to: **`frontend`**  
+   (So install/build run against `frontend/package.json`, where `"next"` is listed.)
 
-In **Settings → Build & Development Settings**:
+2. **Project → Settings → Build & Development Settings**  
+   - **Framework Preset**: **Next.js** (or leave on Auto after root dir is correct).  
+   - **Build Command**: leave **default** (`next build` / `npm run build`).  
+   - **Install Command**: leave **default** (`npm install` / `yarn` / `pnpm` per lockfile).  
+   - **Output Directory**: leave **empty** (do not use `public`).
 
-- Clear custom **Install Command** / **Build Command** overrides unless you intend to replace `vercel.json`.
-- Set **Output Directory** to empty / default (not `public`). Next.js outputs to `.next`; Vercel handles it when the framework is **Next.js**.
+3. **Remove any root `vercel.json`** from this repo if you still have an old copy that sets `installCommand` / `buildCommand` / `framework` from the repo root — with Root Directory `frontend`, those paths would be wrong.
 
-Commit and push: `vercel.json`, `package.json`, `frontend/package-lock.json`, and the `frontend/` app.
+Commit and push: `frontend/package-lock.json` (if present), `frontend/package.json`, and the rest of the app under `frontend/`.
