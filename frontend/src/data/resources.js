@@ -24,4 +24,16 @@ export const resourceSections = [
     infographicCaption:
       "Infographic placeholder: Strapi can store alt text, captions, and print-ready files.",
   },
+  {
+    id: "academics",
+    title: "Academic habits that stick",
+    subtitle: "Study skills, routines, and school confidence",
+    bullets: [
+      "Consistent sleep and meal timing matter as much as flashcards for test weeks.",
+      "Short, focused work blocks (with breaks) mirror rehearsal sets and practice reps.",
+      "When adults celebrate effort on hard problems, students risk more in class and on stage.",
+    ],
+    infographicCaption:
+      "Infographic placeholder: swap for a one-page study-routine PDF or partner school checklist.",
+  },
 ];

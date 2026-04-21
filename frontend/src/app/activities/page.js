@@ -5,7 +5,7 @@ import { ButtonLink } from "@/components/ButtonLink";
 
 export const metadata = {
   title: "Rian’s Activities",
-  description: `Sports and music timeline for ${site.founder} — Rising MVPs.`,
+  description: `Sports, music, and academics timeline for ${site.founder} — Rising MVPs.`,
 };
 
 export default function ActivitiesPage() {
@@ -16,11 +16,12 @@ export default function ActivitiesPage() {
           Rian&apos;s activities
         </p>
         <h1 className="mt-2 font-heading text-4xl font-bold text-[var(--ink)] sm:text-5xl">
-          A timeline of sports, music, and leadership in motion
+          A timeline of sports, music, academics, and leadership in motion
         </h1>
         <p className="mt-6 max-w-3xl text-lg text-[var(--ink-soft)]">
-          This page mirrors how Strapi might store ordered timeline entries with year,
-          title, rich text, and media galleries.
+          Honors in the classroom sit alongside the stage and the court—this page mirrors
+          how Strapi might store ordered timeline entries with year, title, rich text, and
+          media galleries.
         </p>
 
         <ol className="relative mt-14 border-l-2 border-[var(--sun)] pl-8">

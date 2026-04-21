@@ -8,11 +8,25 @@ export const activityTimeline = [
       "Earned all-region recognition while mentoring middle school section players after practice.",
   },
   {
+    id: "a1b",
+    year: "2024",
+    title: "Academic honors · STEM & humanities",
+    detail:
+      "Named to the principal’s list; strongest work in lab sciences and history while balancing travel for music and basketball.",
+  },
+  {
     id: "a2",
     year: "2025",
     title: "Captain · varsity basketball",
     detail:
-      "Led pre-game warmups and off-court study halls; focused on inclusive communication.",
+      "Led pre-game warmups and off-court study halls; focused on inclusive communication and steady academic check-ins for teammates.",
+  },
+  {
+    id: "a2b",
+    year: "2025",
+    title: "Peer tutor · math & study skills",
+    detail:
+      "Volunteered weekly sessions after school so younger students could build confidence before exams—same patience Rian brings to sectionals and drills.",
   },
   {
     id: "a3",

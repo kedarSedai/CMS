@@ -33,8 +33,8 @@ export default function AboutPage() {
             </h2>
             <p>
               Young people learn best when adults model consistency, joy, and service.
-              Rising MVPs connects performance arts and athletics with neighborhood
-              projects so students feel accountable to a community—not just a
+              Rising MVPs connects performance arts, athletics, and classroom habits with
+              neighborhood projects so students feel accountable to a community—not just a
               scoreboard.
             </p>
             <p>

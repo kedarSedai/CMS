@@ -6,7 +6,7 @@ import { VolunteerForm } from "@/components/VolunteerForm";
 export const metadata = {
   title: "Get Involved",
   description:
-    "Volunteer, donate, or sponsor Rising MVPs programs for youth sports, music, and community service.",
+    "Volunteer, donate, or sponsor Rising MVPs programs for youth sports, music, academics, and community service.",
 };
 
 const sponsorTiers = [

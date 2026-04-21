@@ -26,7 +26,7 @@ export const viewport = {
 export const metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} · Youth sports, music, and service`,
+    default: `${site.name} · Youth sports, music, academics, and service`,
     template: `%s · ${site.name}`,
   },
   description: site.description,

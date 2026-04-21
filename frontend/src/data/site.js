@@ -4,9 +4,9 @@
  */
 export const site = {
   name: "Rising MVPs",
-  tagline: "Youth, sports, music, and community—rising together.",
+  tagline: "Youth, sports, music, academics, and community—rising together.",
   description:
-    "Rising MVPs is a nonprofit founded by Rian Patel, empowering youth through sports and music while supporting communities in times of need.",
+    "Rising MVPs is a nonprofit founded by Rian Patel, empowering youth through sports, music, and academic growth while supporting communities in times of need.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://risingmvps.org",
   founder: "Rian Patel",
   email: "hello@risingmvps.org",

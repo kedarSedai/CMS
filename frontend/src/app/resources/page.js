@@ -5,7 +5,7 @@ import { ButtonLink } from "@/components/ButtonLink";
 export const metadata = {
   title: "Resources",
   description:
-    "Music and sports benefits for families—downloadable infographics and guidance from Rising MVPs.",
+    "Music, sports, and academic benefits for families—downloadable infographics and guidance from Rising MVPs.",
 };
 
 export default function ResourcesPage() {
@@ -16,7 +16,7 @@ export default function ResourcesPage() {
           Resources
         </p>
         <h1 className="mt-2 font-heading text-4xl font-bold text-[var(--ink)] sm:text-5xl">
-          Music &amp; sports benefits for confident families
+          Music, sports, &amp; study habits for confident families
         </h1>
         <p className="mt-6 max-w-3xl text-lg text-[var(--ink-soft)]">
           Parents asked for clear, credible explainers—so we built a resource hub that

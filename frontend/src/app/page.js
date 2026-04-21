@@ -77,7 +77,7 @@ export default function HomePage() {
               <div className="min-w-0 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4 shadow-sm sm:p-7">
                 <MiniMeta>Nonprofit · Founded by {site.founder}</MiniMeta>
                 <h1 className="mt-2 hyphens-auto break-words font-heading text-2xl font-extrabold leading-tight tracking-tight text-[var(--ink)] sm:text-3xl md:text-4xl lg:text-5xl">
-                  Youth sports, music, and service—rising together in every
+                  Youth sports, music, academics, and service—rising together in every
                   neighborhood.
                 </h1>
                 <p className="mt-4 max-w-2xl text-sm leading-relaxed text-[var(--ink-soft)] sm:text-base">
@@ -408,8 +408,9 @@ export default function HomePage() {
                 Mission &amp; story
               </h2>
               <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)] sm:text-base">
-                Rising MVPs grows discipline and empathy through sports and music, then
-                channels that same energy into neighborhood service. When families need
+                Rising MVPs grows discipline and empathy through sports, music, and
+                academics, then channels that same energy into neighborhood service. When
+                families need
                 support, we aim to be a steady presence—not a one-off photo op.
               </p>
               <ButtonLink href="/about" variant="ghost" className="mt-3 !px-0 text-sm">
@@ -438,7 +439,7 @@ export default function HomePage() {
                 </li>
                 <li>
                   <Link href="/resources" className="hover:underline">
-                    Music &amp; sports resources
+                    Music, sports, &amp; study resources
                   </Link>
                 </li>
               </ul>
