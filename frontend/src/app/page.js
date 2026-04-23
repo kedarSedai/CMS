@@ -103,8 +103,8 @@ export default function HomePage() {
               </div>
               <div className="relative aspect-[4/3] min-h-[180px] w-full max-w-full overflow-hidden rounded-xl border border-[var(--border)] shadow-md sm:aspect-[21/10] sm:min-h-[200px]">
                 <Image
-                  src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1600&q=80"
-                  alt="Diverse group of young people laughing together outdoors"
+                  src="/photo.JPEG"
+                  alt="Rising MVPs youth and community outdoors"
                   fill
                   className="object-cover"
                   sizes="(max-width: 640px) 100vw, (max-width: 1280px) 100vw, 66vw"
